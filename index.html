@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:wght@100&display=swap"
+        rel="stylesheet">
+    <title>Siddharth</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url("img/1.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100%;
+        }
+
+
+        header {
+            background-color: white;
+        }
+
+        .left {
+            /* border: 2px solid red; */
+            position: absolute;
+            display: inline-block;
+            top: 6px;
+            left: 50px;
+            margin: 0px;
+            line-height: 2px;
+            font-family: 'Righteous', cursive;
+        }
+
+        .left img {
+            display: block;
+            width: 100px;
+            margin: 0 auto;
+        }
+
+        .mid {
+            /* border: 2px solid rgb(235, 231, 26); */
+            display: block;
+            width: 50%;
+            margin: 30px auto;
+            color: black;
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar ul {
+            list-style: none;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 22px;
+        }
+
+        .navbar li a {
+            text-decoration: none;
+            padding: 24px 45px;
+            font-family: 'Righteous', cursive;
+        }
+
+        .navbar li a:hover {
+            text-decoration: underline;
+            color: rgb(109, 111, 240)
+        }
+
+
+        .right {
+            /* border: 2px solid rgb(0, 255, 0); */
+            position: absolute;
+            display: inline-block;
+            top: 31px;
+            right: 40px;
+        }
+
+        .btn {
+            width: 98px;
+            margin: 5px 28px;
+            padding: 14px 10px;
+            border-radius: 10px;
+            font-family: 'Righteous', cursive;
+            background-color: black;
+            color: rgb(255 255 255);
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: rgb(189, 186, 186);
+            color: black;
+
+        }
+
+        .container1 {
+            /* border: 2px solid yellow; */
+            display: inline-block;
+            color: rgb(0, 0, 0);
+            margin: 95px 112px;
+            padding: 45px 84px;
+            width: 30%;
+            /* font-family: 'Roboto', sans-serif; */
+            font-size: 50px;
+            font-style: normal;
+        }
+
+        .container2 {
+            display: block;
+            /* border: 2px solid rgb(33, 221, 89); */
+            background-color: white;
+            color: rgb(0, 0, 0);
+            margin: 50px 103px;
+            padding: 45px 55px;
+            width: 20%;
+            font-size: 20px;
+            border-radius: 30px;
+            float: right;
+        }
+
+        .form-group {
+            font-family: 'Bree Serif', serif;
+        }
+
+        label {
+            display: block;
+            margin: 7px 0px;
+        }
+
+        input,select,option{
+            width: 100%;
+            margin: 6px 3px;
+            padding: 8px 9px;
+        }
+
+        .btn1{
+            width: 100%;
+            margin: 5px 1px;
+            padding: 14px 10px;
+            border-radius: 10px;
+            font-family: 'Righteous', cursive;
+            background-color: black;
+            color: rgb(255 255 255);
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="left">
+            <img src="img/logo.png" alt="Siddharth Hotel">
+            <h1>Siddharth</h1>
+        </div>
+        <div class="mid">
+            <div class="navbar">
+                <ul>
+                    <li><a href="" class="active">Home</a></li>
+                    <li><a href="#">Rooms</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="right">
+            <Button name="" class="btn">Contact Us</Button>
+            <Button name="" class="btn">Book Now</Button>
+        </div>
+    </header>
+    <div class="container1">
+        <h1><b>Siddharth Restro & Bar</b></h1>
+    </div>
+    <div class="container2">
+        <!-- <h3>Best Restro of Mumbai.</h3> -->
+        <h1>Book Your Hotel</h1>
+        <form action="non-action.php">
+            <div class="form-group">
+                <label>Check-in:</label>
+                <input type="date" name="date" placeholder="Enter Date">
+            </div>
+            <div class="form-group">
+                <label>Check-in:</label>
+                <input type="date" name="date" placeholder="Enter Date">
+            </div>
+            <div class="form-group">
+                <label>Guests:</label>
+                <select>
+                    <option>1 Adult</option>
+                    <option>2 Adults</option>
+                    <option>3 Adults</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Rooms:</label>
+                <select>
+                    <option>1 Room</option>
+                    <option>2 Rooms</option>
+                </select>
+            </div>
+            <div class="form-group"></div>
+            <div class="form-group"></div>
+            <div>
+                <button class="btn1">Submit</button>
+            </div>
+
+        </form>
+    </div>
+</body>
+
+</html>
